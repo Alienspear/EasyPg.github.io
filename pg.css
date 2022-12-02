@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33%;
+    height: 40%;
+    margin-bottom: 12px;
+    padding: 0 40px;
+  }
+  
+  .card {
+    box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.2);
+    margin: 4px;
+    border-radius: 10%;
+
+  }
+  
+  .about-section {
+    padding: 30px;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(pg.jpg);
+    color: white;
+    
+    
+  }
+  
+  .container {
+    padding: 0 30px;
+    /* margin: 20px  0px; */
+     border-radius: 25px;
+     border: 3px solid black;
+     /* position: relative; */
+ 
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    /* border: 2px solid lightblue; */
+    /* border-radius: 12px; */
+    /* margin: 14px  19px;
+     border-radius: 23px; */
+  }
+  
+  .title {
+    color: black;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: rgb(0, 0, 5);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 15px;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .column {
+      width: 100%;
+      display: block;
+      border-radius: 20%;
+    }
+  }
+  
+
+
+
